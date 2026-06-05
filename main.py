@@ -94,19 +94,6 @@ def health():
     return {
         "status": "ok",
         "service": "resources",
-        "port": 8001
     }
 
 
-# ─────────────────────────────────────────────
-# Run server
-# ─────────────────────────────────────────────
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(
-        "resources_main:app",
-        host="0.0.0.0",
-        port=8001,
-        reload=True
-    )
