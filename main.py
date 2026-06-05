@@ -72,7 +72,8 @@ app = FastAPI(
 # ─────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://www.abovetherestadvisors.com",
+                  "https://api.abovetherestadvisors.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
